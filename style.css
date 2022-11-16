@@ -37,6 +37,7 @@
   body{
     background-color: skyblue;
     color: black;
+   
   }
    form {
     font: 1em sans-serif;
@@ -79,4 +80,26 @@ aside > p {
 
 p {
     font-family: 'Fira Sans', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(100, 100, 100);
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: .7rem;
+}
+
+td,
+th {
+  border: 1px solid rgb(100, 100, 100);
+  padding: 10px 10px;
+}
+
+td {
+  text-align: center;
+}
+
+.div{
+  border: 10px solid blueviolet;
 }
