@@ -1,0 +1,24 @@
+h1,h2{
+    color: red;
+}
+p{
+    color: blueviolet;
+}
+li{
+    color: red;
+    list-style-type: square;
+}
+.list{
+    color: blue;
+    font-weight: bold;
+}
+h1 + p {
+    font-size: 150%;
+}
+
+a:hover {
+    text-decoration: none;
+    color: chartreuse;
+  }
+
+  
