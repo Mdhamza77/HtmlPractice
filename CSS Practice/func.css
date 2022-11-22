@@ -1,0 +1,22 @@
+
+.out{
+    border: 5px solid black;
+}
+.inn{
+    background-color: rebeccapurple;
+    color: white;
+    width: calc(98%);
+
+    padding: 10px;
+}
+
+
+
+.box{
+    margin: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transform: rotate(-0.8turn);
+}
+@import 'style.css';

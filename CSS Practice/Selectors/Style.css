@@ -1,0 +1,34 @@
+h1,h3,p.par{
+    border-style:dotted ;
+    background-color: cornflowerblue;
+    color: black;
+    text-align: center;
+    list-style-type: disc;
+}
+li{
+    text-align: center;
+    list-style-type: none;
+
+}
+
+
+a{
+   text-decoration: none;
+   color: navy;
+}
+/* Internal links, beginning with "#" */
+a[href^="#"]:hover{
+    background-color: cadetblue;
+}
+/* Links with URL anywhere    */
+a[href*="google"]:hover{
+    background-color: aquamarine;
+}
+
+a[href*="course"]:hover{
+
+    background-color: blueviolet;
+} 
+
+
+

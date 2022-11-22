@@ -24,11 +24,21 @@
     customElements.define("word-count", WordCount);
 
   </script>
+
+  
+  <script>
+     navigator.geolocation.getCurrentPosition((watch)=>{console.log(watch)} , (err)=>{
+      console.log(err)
+     })
+     navigator.geolocation.watchPosition((show)=>{console.log(show)} , err =>{console.log(err)})
+    </script>
+
   <div>
   </div>
   <word-count>This is Custom Created element</word-count>
   <word-count> <a href="index.html">link</a>This is Home Page tag</word-count>
 
 </body>
+
 
 </html>

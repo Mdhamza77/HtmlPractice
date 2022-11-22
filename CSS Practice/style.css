@@ -1,24 +1,32 @@
-h1,h2{
-    color: red;
+    
+body{
+    border: 5px solid gray;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
 }
-p{
-    color: blueviolet;
+h1{
+    border-bottom: 5px solid grey;
+    font-size: 2rem;
+    text-align: center;
 }
-li{
-    color: red;
-    list-style-type: square;
-}
-.list{
-    color: blue;
-    font-weight: bold;
-}
-h1 + p {
-    font-size: 150%;
+.task{
+    text-justify: auto;
+    line-break: auto;
+    font-size: 1.5rem;
+    width: 100px;
+
 }
 
-a:hover {
+span:hover{
     text-decoration: none;
-    color: chartreuse;
-  }
+    color: aqua;
 
-  
+}
+a:link , a:visited{
+    color: red;
+}
+
+li{
+
+    list-style: square;
+}
