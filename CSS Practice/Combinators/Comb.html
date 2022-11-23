@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        h2 {
+            text-align: center;
+            color: black;
+            opacity: 0.8;
+            border: 10px solid black;
+        }
+
+        h2:hover {
+            background-color: rgb(113, 120, 173);
+        }
+
+        li:first-of-type+li {
+            color: red;
+        }
+
+        li:hover {
+            background-color: turquoise;
+        }
+
+        span {
+            color: teal;
+        }
+
+        div>span {
+            color: brown;
+        }
+
+        li {
+            list-style-type: armenian;
+        }
+
+        li li {
+            list-style-type: disc;
+        }
+
+        p ~ span:hover{
+               color: blue;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <h2>This is Adjacent Sibling Combinators</h2>
+    <ol>
+        <li>Ocean</li>
+        <li>Sea</li>
+        <li>Pond</li>
+        <li>Beach</li>
+    </ol>
+    <h2>This is Child Combinators </h2>
+    <div>
+        <span>
+            This is the Span#1 Element tag present (This is second elements present inside a div elements)
+            <span>This is the Span#2 tag </span>
+        </span>
+    </div>
+    <span>This Span#3 is outside of div elements means first elements</span>
+
+
+    <h2>This is Descendant Combinators</h2>
+
+    <ul>
+        <li>
+            <div> First Topic </div>
+            <ul>
+                <li>Sub Heading #1 </li>
+                <li>Sub Heading #2 </li>
+            </ul>
+        </li>
+        <li>
+            <div>Second Topic</div>
+            <ul>
+                <li>Sub Topic #1</li>
+                <li>Sub Topic #2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>General Sibling</h2>
+
+    <span>This is not hovering.</span>
+    <p>Here is a paragraph.</p>
+    <span>And here is a teal span!</span>
+    <code>More code… push()</code>
+    <div>How are you?</div>
+    <p>Whatever it may be, keep smiling.</p>
+    <span>And yet again this is a red span!</span>
+
+</body>
+
+</html>
