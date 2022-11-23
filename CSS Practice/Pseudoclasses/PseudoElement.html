@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            background-color: skyblue;
+        /*
+        * {
+            background-color: wheat;
         }
-        p::first-line{
+
+        p::first-line {
             font: 1em sans-serif;
-            color:darkblue;
+            color: darkblue;
         }
-        a::after{
+
+        a::after {
             text-decoration: none;
-            content:'(' attr(href)')';
+            content: '(' attr(href)')';
         }
-     
+
+        input {
+            margin-top: 1rem;
+        }
+
+        input::file-selector-button {
+            padding: 0.5em;
+            border-radius: 3px;
+            border-color: thin solid gray;
+            color: dodgerblue;
+            font-weight: bold;
+
+
+        }
+*/
+        article p:first-child::first-line {
+            font-size:  120%;
+            font-weight:bolder;
+            background-color: aqua;
+        }
     </style>
 
 
 
 </head>
+
 <body>
-    
+    <!--
     <h1>This is Pseudo Element property </h1>
     <p>This paragraph context elements font  is only going to change by first-line by selected elements </p>
     <hr>
     <p>The sailfish is named for its sail-like dorsal fin and is widely considered the fastest fish in the ocean. 
-        <a href="https://en.wikipedia.org/wiki/Sailfish">You can read more about it here</a>.</p>
-    
+        <a href="https://en.wikipedia.org/wiki/Sailfish">You can read more about it here</a>
+    </p>
+
+        <label for="img">choose an image</label><br>
+        <input type="file" id="img" accept="image/png,image/jpeg">
+
+-->
+    <article>
+        <p>This is Example code of combined Pseudo classes and <small> Pseudo Elements</small>Present inside in it.</p>
+
+        <p>This First line context of First line tag to see the difference between Pseudo Class and Pseudo Elements  </p>
+    </article>
+
+
 </body>
+
 </html>
