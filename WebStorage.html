@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head manifest="Applicationcache.appcache">
 
-    </head>
-    <body>
-
-
-<p><button onclick="clickCounter()" type="button">Count</button></p>
-<p id="demo">0</p>
-<p>Click to see the counter increase.</p>
-
-
-
-<script>
-function clickCounter() {
-  if (sessionStorage.clickcount) {
-    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
-  } else {
-    sessionStorage.clickcount = 1;
+<head manifest="Applicationcache.appcache">
+  <script>
+    function clickCounter() {
+      if (sessionStorage.clickcount) {
+        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+      } else {
+        sessionStorage.clickcount = 1;
+      }
+      document.getElementById("demo").innerHTML = sessionStorage.clickcount;
     }
-  document.getElementById("demo").innerHTML = sessionStorage.clickcount;
-}
 
-</script>
+  </script>
+  <!---->
 
-<script>
+  <script>
 
-function clickCounter() {
-  if (localStorage.clickcount) {
-    localStorage.clickcount = Number(localStorage.clickcount) + 1;
-  } else {
-    localStorage.clickcount = 1;
+    function clickCounter() {
+      if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+      } else {
+        localStorage.clickcount = 1;
+      }
+      document.getElementById("demo").innerHTML = localStorage.clickcount;
     }
-  document.getElementById("demo").innerHTML = localStorage.clickcount;
-}
+  </script>
 
-  </script >
-    </body>
+
+</head>
+
+<body>
+
+
+  <p><button onclick="clickCounter()" type="button">Count</button></p>
+  <p id="demo">0</p>
+  <p>Click to see the counter increase.</p>
+</body>
+
 </html>

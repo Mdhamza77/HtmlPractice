@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
+  <title>COMP</title>
   <script>
     class WordCount extends HTMLElement {
       constructor() {
@@ -24,17 +21,17 @@
     customElements.define("word-count", WordCount);
 
   </script>
-
-  
+  <!---->
   <script>
-     navigator.geolocation.getCurrentPosition((watch)=>{console.log(watch)} , (err)=>{
+    navigator.geolocation.getCurrentPosition((watch) => { console.log(watch) }, (err) => {
       console.log(err)
-     })
-     navigator.geolocation.watchPosition((show)=>{console.log(show)} , err =>{console.log(err)})
-    </script>
+    })
+    navigator.geolocation.watchPosition((show) => { console.log(show) }, err => { console.log(err) })
+  </script>
 
-  <div>
-  </div>
+</head>
+
+<body>
   <word-count>This is Custom Created element</word-count>
   <word-count> <a href="index.html">link</a>This is Home Page tag</word-count>
 

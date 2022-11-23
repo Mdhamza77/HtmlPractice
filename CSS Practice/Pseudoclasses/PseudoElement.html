@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: skyblue;
+        }
+        p::first-line{
+            font: 1em sans-serif;
+            color:darkblue;
+        }
+        a::after{
+            text-decoration: none;
+            content:'(' attr(href)')';
+        }
+     
+    </style>
+
+
+
+</head>
+<body>
+    
+    <h1>This is Pseudo Element property </h1>
+    <p>This paragraph context elements font  is only going to change by first-line by selected elements </p>
+    <hr>
+    <p>The sailfish is named for its sail-like dorsal fin and is widely considered the fastest fish in the ocean. 
+        <a href="https://en.wikipedia.org/wiki/Sailfish">You can read more about it here</a>.</p>
+    
+</body>
+</html>
