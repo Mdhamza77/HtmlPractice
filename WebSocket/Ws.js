@@ -9,4 +9,13 @@ server.on('connection',connection=>{
         console.log(ev)
         connection.send('hAPPY')
     })
+    
+    server.on('connection',connection=>{
+        connection.on('message',ec=>{
+            console.log(ec.toString())
+        
+            connection.send("My name is John");
+        })
+    })
+   
 })
