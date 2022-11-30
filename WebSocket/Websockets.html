@@ -9,17 +9,21 @@
         const websocket=new WebSocket('ws://localhost:3000')
         websocket.onopen=(ev)=>{
             websocket.send('hi')
+            websocket.send("welcome")
             websocket.onmessage=(mes)=>{
                 console.log(mes.data);
             };
         }
+   /*     
         websocket.onopen=(ec)=>{
             websocket.send("welcome")
             websocket.onmessage=(mes)=>{
                 console.log(mes.data)
+                
             }
         }
-        
+        */
+
     </script>    
  
 </head>

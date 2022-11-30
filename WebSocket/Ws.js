@@ -8,14 +8,18 @@ server.on('connection',connection=>{
         console.log(ev.toString());
         console.log(ev)
         connection.send('hAPPY')
+        connection.send("My name is John");
     })
     
+ /*
     server.on('connection',connection=>{
         connection.on('message',ec=>{
             console.log(ec.toString())
-        
+   
             connection.send("My name is John");
+        
         })
     })
-   
+   */
 })
+
