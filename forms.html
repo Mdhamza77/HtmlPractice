@@ -23,7 +23,7 @@
 
             <!--   <label for="choose">Would you prefer a banana or cherry?</label>
                 <input id="choose" name="i-like" required pattern="[Bb]anana|[Cc]herry" />
-            </div>
+            
             <div>
                 <label for="number">How many would you like?</label>
                 <input type="number" id="number" name="amount" value="0" min="1" max="10" />
@@ -36,16 +36,17 @@
                     <div>
                         <p>
                             <label for="license">Do you have license : </label>
+
                             <input type="radio" required name="driver" id="1"><label for id="1">Yes</label>
                             <input type="radio" required name="driver" id="2"><label for id="2">No</label>
                         </p>
                     </div>
-                </fieldset>
                 
+                </fieldset>
+                       
                 <p>
                     <label for="box"> How old are you </label>
                     <input type="number" required max="49" min="18">
-                <p>
                     <label for="bikes" id="1">Bikes Model<span aria-required="requierd"> *</span></label>
                     <input type="text" id="1" list="li" required>
                     <datalist id="li">
@@ -98,6 +99,10 @@
                 <input type="range" max="20" min="10">
 
             </div>
+            <label for="gender">Genders</label>
+            <input type="radio" id="gender" name="male">
+                <input type="radio" id="gender" name="female">
+    
 
         </form>
 
