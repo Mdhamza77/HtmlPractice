@@ -42,3 +42,32 @@ The use-credentials value must be used when fetching a manifest that requires cr
 
 <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials" />
 
+For :  
+
+The for attribute is an allowed attribute for <label> and <output>. When used on a <label> element it indicates the form element that this label describes.
+When used on an <output> element it allows for an explicit relationship between the elements that represent values which are used in the output.
+
+When used as an attribute of <label>, the for attribute has a value which is the id of the form element it relates to.
+
+<label for="username">Your name</label> <input type="text" id="username" />
+
+Max  : 
+
+The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this,
+the element fails validation. This value must be greater than or equal to the value of the min attribute. If the max attribute is present by is not specified or is invalid, no max value is applied
+
+Syntax for max values by input type
+Input type	Syntax	Example
+date	yyyy-mm-dd	<input type="date" max="2019-12-25" step="1">
+month	yyyy-mm	<input type="month" max="2019-12" step="12">
+week	yyyy-W##	<input type="week" max="2019-W23" step="">
+time	hh:mm	<input type="time" max="17:00" step="900">
+datetime-local	yyyy-mm-ddThh:mm	<input type="datetime-local" max="2019-12-25T23:59">
+number	<number>	<input type="number" min="0" step="5" max="100">
+range	<number>	<input type="range" min="60" step="5" max="100">
+Note: When the data entered by the user doesn't adhere to the maximum value set, the value is considered invalid in constraint validation and will match the :invalid and :out-of-range pseudo-classes.
+
+MAx-Length : 
+
+The maxlength attribute defines the maximum number of characters (as UTF-16 code units) the user can enter into an <input> or <textarea>. This must be an integer value 0 or higher.
+
