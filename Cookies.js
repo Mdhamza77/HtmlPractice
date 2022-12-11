@@ -1,5 +1,5 @@
-document.cookie = "name=Cookies ;";
-document.cookie = "favorite_food=Choco Chips;";
+document.cookie = "name=Cookies ;secure;";
+document.cookie = "favorite_food=Choco Chips; secure";
 
 function showCookies() {
   const output = document.getElementById('cookies')

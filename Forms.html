@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+      <label for="Password">Password</label>
+      <input type="text" id="Password" name="Password" required>
+      <button type="submit" onclick="setCookie()" value="Set Cookies">Set Cookies</button>
+      <button  onclick="getCookie()" value="get Cookies" >get Cookies</button>
+      <button type="submit" onclick="clear()">Clear</button>
+    </form>
+</body>
+      <script>  
+            function setCookie() {
+                document.cookie = "username =" + document.getElementById("username").value 
+                document.cookie = "password =" + document.getElementById("Password").value
+            }
+            function getCookie(){
+                var cookiearr = document.cookie.split(";") 
+                for(var i = 0 ; i< cookiearr.length;i++) {
+                var name = cookiearr[i].split(":")
+                if(name[0] === "username"){
+                         document.getElementById("username").value = name[1]; 
+                }
+                else if(name[0] === "password"){
+                    document.getElementById("Password").value = name[1]
+                }
+                         
+            }
+            function clear(){
+                document.getElementById("username").value = ""
+                document.getElementById("password").value = ""
+            }
+        }
+       
+     </script>
+</html>
